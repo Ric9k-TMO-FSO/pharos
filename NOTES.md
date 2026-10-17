@@ -94,6 +94,12 @@ Considered, then dropped.
   TOH attached, without charging. If the TOH supply costs too much, light the
   TOH LED only at night (clock-based, one wake-up per night).
 
+## App grid icon
+
+`icons/app/pharos.svg` and PNGs at 86, 108, 128 and 172 px: icon v13 in the
+colours of the lit top menu switch (background #536b88, lines #99c9ff).
+Kept for later; not installed, as Pharos has no launcher (`.desktop`).
+
 ## To do
 
 - Overnight battery measurement, pharos on and off.

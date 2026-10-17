@@ -56,7 +56,8 @@ Then add **Pharos** to the top menu in Settings and switch it on.
 - `src/` – `pharos` program (`on`, `off`, `watch`)
 - `data/` – user service, symbiosis TOH config, MCE pattern, settings entry
 - `qml/` – top menu switch
-- `icons/` – icon source (`icon-m-pharos.svg`) and PNGs per density
+- `icons/` – icon source (`icon-m-pharos.svg`) and PNGs per density;
+  `icons/app/` holds an app grid icon (86–172 px), not installed for now
 - `translations/` – `.ts` sources
 - `rpm/pharos.spec`
 - `NOTES.md` – design notes

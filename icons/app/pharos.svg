@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <!-- SPDX-FileCopyrightText: 2026 Ric9k
+       SPDX-License-Identifier: BSD-3-Clause -->
+  <!-- Pharos app grid icon v1, based on icon-m-pharos v13,
+       colours of the lit top menu switch: #536b88 background, #99c9ff lines. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5f7a9b"/>
+      <stop offset="1" stop-color="#475c78"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="url(#bg)"/>
+  <g transform="translate(32 32.5) scale(0.74) translate(-32 -32)">
+    <g transform="translate(32 32) scale(0.9) translate(-32 -32)">
+  <!-- solid parts -->
+  <g fill="#99c9ff" stroke="none">
+    <!-- dome cap, as wide as the lantern -->
+    <path d="M 27 12.5 A 5 5 0 0 1 37 12.5 Z"/>
+    <!-- lamp -->
+    <circle cx="32" cy="15.8" r="1.6"/>
+    <!-- door -->
+    <path d="M 33 52 L 33 47.5 A 2 2 0 0 1 37 47.5 L 37 52 Z"/>
+  </g>
+  <!-- bold outlines -->
+  <g fill="none" stroke="#99c9ff" stroke-width="2.78" stroke-linecap="round" stroke-linejoin="round">
+    <!-- lantern room -->
+    <path d="M 28 12.5 L 28 19 M 36 12.5 L 36 19"/>
+    <!-- tower -->
+    <path d="M 26.5 19 L 23.5 52 L 40.5 52 L 37.5 19 Z"/>
+    <!-- islet -->
+    <path d="M 15 56.8 Q 32 47.2 49 56.8 Q 50.2 58.5 48.2 58.5 L 15.8 58.5 Q 13.8 58.5 15 56.8 Z"/>
+  </g>
+  <!-- thin details -->
+  <g fill="none" stroke="#99c9ff" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round">
+    <!-- diagonal bands -->
+    <path d="M 26.34 34 L 37.03 27"/>
+    <path d="M 25.34 45 L 38.03 38"/>
+    <!-- beams: detached, open, continuous -->
+    <path d="M 23 14.5 L 5 10"/>
+    <path d="M 23 17.5 L 5 22"/>
+    <path d="M 41 14.5 L 59 10"/>
+    <path d="M 41 17.5 L 59 22"/>
+  </g>
+
+  </g>
+  </g>
+</svg>
