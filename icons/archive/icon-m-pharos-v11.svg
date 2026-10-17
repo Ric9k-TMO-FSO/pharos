@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- SPDX-FileCopyrightText: 2026 Ric9k
+       SPDX-License-Identifier: BSD-3-Clause -->
   <!-- Pharos icon v11: lighthouse on a symmetric islet, winding path from the door,
        lamp in the lantern, narrow open continuous beams. Outline only, white on transparent. -->
   <g fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">

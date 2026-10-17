@@ -1,10 +1,12 @@
 // SPDX-FileCopyrightText: 2026 Jolla Mobile Ltd
+// SPDX-FileCopyrightText: 2026 Ric9k
 //
 // SPDX-License-Identifier: BSD-3-Clause
 
 //! AW2023 LED controller, steady (direct mode) light.
 //!
-//! Register map and enable sequence taken from the blinker example.
+//! Register map and enable sequence taken from the blinker example of Jolla's
+//! symbiosis (BSD-3-Clause), examples/blinker/controller.rs.
 
 use num_enum::IntoPrimitive;
 use std::io::{Error, Read, Result, Write};

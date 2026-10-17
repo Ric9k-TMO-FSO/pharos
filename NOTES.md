@@ -1,5 +1,7 @@
 # Pharos – design notes
 
+*Written by the LLM.*
+
 Goal: a very dim, steady light while the display is off, to find the phone in the dark.
 
 Name: Pharos, the lighthouse of Alexandria, origin of the word for lighthouse in
@@ -95,9 +97,3 @@ Considered, then dropped.
 ## To do
 
 - Overnight battery measurement, pharos on and off.
-- Separate pull request to Jolla: `blinker steady` (constant mode).
-
-Done: middle LED is index 1 (default); translations (`qsTrId`, catalog
-`pharos`, built by `lrelease -idbased` in the RPM); icon v13 in Sailfish
-style, installed per density in the theme (`image://theme/icon-m-pharos`);
-standalone RPM package.

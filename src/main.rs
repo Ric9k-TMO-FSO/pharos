@@ -1,10 +1,13 @@
 // SPDX-FileCopyrightText: 2026 Jolla Mobile Ltd
+// SPDX-FileCopyrightText: 2026 Ric9k
 //
 // SPDX-License-Identifier: BSD-3-Clause
 
 //! Pharos: steady, dim light on TOHs with AW2023 controller, to find the phone in the dark.
 //!
-//! Based on the blinker example. Uses the AW2023 direct (constant) mode instead of the
+//! Derived from the blinker example of Jolla's symbiosis (BSD-3-Clause):
+//! https://github.com/sailfishos/symbiosis/tree/main/examples/blinker
+//! Uses the AW2023 direct (constant) mode instead of the
 //! pattern mode, so the light stays steady even at very low brightness.
 
 mod controller;

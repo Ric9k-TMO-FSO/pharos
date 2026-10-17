@@ -1,5 +1,7 @@
 # Pharos
 
+Find your phone in the night.
+
 A very dim, steady light while the display is off, to find your Sailfish OS
 phone in the dark.
 
@@ -7,16 +9,22 @@ phone in the dark.
 - With the Inari Blue TOH attached: its middle LED, in constant mode.
 - A top menu switch to turn it on and off.
 
+This project was created with heavy LLM use, and human brain and knowledge where possible.
+
 ## Build
 
-With the Sailfish SDK (Rust comes from the target), from the project root:
+With the Sailfish SDK, from the project root (Rust and the translation tools
+come from the SDK target):
 
     sfdk build
 
-If the project sits on a folder shared with the build engine and rustc fails
-with `No such device (os error 19)`, build inside the engine instead:
+If rustc fails with `No such device (os error 19)`, the project folder is
+shared with the build engine in a way rustc cannot use. Build inside the
+engine instead, then copy the package back:
 
     sfdk engine exec bash -c 'rsync -a --delete --exclude target --exclude cargo-home --exclude RPMS ~/path/to/pharos/ ~/pharos/ && cd ~/pharos && mb2 -t <target> build && cp -r RPMS ~/path/to/pharos/'
+
+The package is written to `RPMS/`.
 
 ## Install
 
@@ -36,4 +44,22 @@ Then add **Pharos** to the top menu in Settings and switch it on.
 
 ## Licence
 
-BSD-3-Clause. Partly derived from Jolla's symbiosis `blinker` example.
+BSD-3-Clause, see `LICENSE`.
+
+## Credits
+
+Pharos is an independent project. It is not affiliated with, endorsed by or
+supported by Jolla. "Jolla", "Sailfish OS" and "Inari Blue" are used only to
+name the hardware and software Pharos works with.
+
+Pharos builds on code that Jolla published under the BSD-3-Clause licence,
+with thanks. Jolla's copyright notice is kept in the files derived from it:
+
+- `src/main.rs`, `src/controller.rs`: derived from the `blinker` example of
+  [symbiosis](https://github.com/sailfishos/symbiosis) (AW2023 register map,
+  enable sequence, TOH detection and I²C borrowing).
+- `qml/EnableSwitch.qml`: derived from the Inari Blue top menu switch.
+- `rpm/pharos.spec`: Rust build section derived from symbiosis' spec.
+
+Pharos also depends on the symbiosis library (BSD-3-Clause) at build time.
+All other files are original work.

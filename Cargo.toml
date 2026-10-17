@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Ric9k
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
 [package]
 name = "pharos"
 version = "0.1.0"

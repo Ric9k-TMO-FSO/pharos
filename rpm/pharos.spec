@@ -14,7 +14,7 @@ Version:        0.1.0
 Release:        1
 Summary:        Dim lights while the display is off, to find the phone in the dark
 License:        BSD-3-Clause
-URL:            https://github.com/YOUR_ACCOUNT/pharos
+URL:            https://github.com/Ric9k-TMO-FSO/pharos
 
 ExclusiveArch:  aarch64
 
@@ -32,10 +32,17 @@ Requires(postun): systemd
 %define inaridir %{_datadir}/tohd-1/tohs/0001/0004
 
 %description
+Find your phone in the night.
 Pharos keeps a very dim, steady light while the display is off: the front
 notification LED (through an MCE pattern) and, when the Inari Blue TOH is
 attached, one of its LEDs in constant mode. A top menu switch turns it on
 and off.
+Only one LED of the Inari Blue TOH is used, at about 1 %, to use as little
+battery as possible.
+There is no automatic switch on when the ambient light is low: detecting
+nightfall with the display off would wake the phone from deep sleep, which
+could use more battery than the LEDs at minimum power. Theory, to be
+confirmed.
 
 %build
 # Cross-compiling under SB2: tell rust which arch to emit (see symbiosis.spec)

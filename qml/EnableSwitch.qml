@@ -1,8 +1,10 @@
 // SPDX-FileCopyrightText: 2026 Jolla Mobile Ltd
+// SPDX-FileCopyrightText: 2026 Ric9k
 //
 // SPDX-License-Identifier: BSD-3-Clause
 //
-// Top menu switch for pharos, based on Jolla's Inari Blue switch.
+// Top menu switch for pharos, derived from Jolla's Inari Blue switch
+// (/usr/share/jolla-settings/pages/inari_blue/EnableSwitch.qml, BSD-3-Clause).
 
 import QtQuick 2.6
 import Sailfish.Silica 1.0
