@@ -21,7 +21,7 @@ damage to the software or hardware.
 
 ## Compatibility and testing
 
-- Briefly tested on the Jolla Phone (2026) with Sailfish OS 5.1 and the
+- Briefly tested on the Jolla Phone (2026) with Sailfish OS 5.2.0.20 and the
   Inari Blue TOH.
 - The TOH LED part only works on the Jolla Phone (2026) with the Inari Blue
   TOH: it needs the TOH connector, Jolla's symbiosis service and the Inari
