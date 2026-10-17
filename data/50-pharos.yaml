@@ -1,7 +1,13 @@
 # SPDX-FileCopyrightText: 2026 Ric9k
 #
 # SPDX-License-Identifier: BSD-3-Clause
+#
+# Symbiosis TOH config, installed in /usr/share/tohd-1/tohs/0001/0004/
+# (vendor 0001 = Jolla, product 0004 = Inari Blue). Symbiosis merges it
+# with the other configs of that folder when the TOH is detected.
 
 --- # Lets pharos borrow the TOH I2C bus.
+# Access rights given by symbiosis.
 access:
+  # Executables allowed to borrow the TOH I2C bus: only the pharos program.
   i2c-dev: ["/usr/libexec/pharos/pharos"]

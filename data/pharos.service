@@ -7,14 +7,21 @@
 # the TOH light is set on each display change when the TOH is present.
 
 [Unit]
+# Name shown by systemctl status.
 Description=Pharos: dim lights while the display is off
+# Start once the user session (and its D-Bus) is up.
 After=post-user-session.target
 
 [Service]
+# Follow the display: TOH LED 1 at brightness 3/255, full current step.
 ExecStart=/usr/libexec/pharos/pharos watch --brightness 3 --current 15 --led 1
+# On stop, switch both lights off; the leading "-" ignores failures (no TOH…).
 ExecStopPost=-/usr/libexec/pharos/pharos off
+# Restart pharos if it exits with an error (e.g. D-Bus connection lost)…
 Restart=on-failure
+# …after 5 seconds.
 RestartSec=5
 
 [Install]
+# "Enable" links pharos to the user session start.
 WantedBy=post-user-session.target
