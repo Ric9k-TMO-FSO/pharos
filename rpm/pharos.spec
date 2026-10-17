@@ -1,9 +1,11 @@
 # SPDX-FileCopyrightText: 2026 Jolla Mobile Ltd
+# SPDX-FileCopyrightText: 2026 Ric9k
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #
 # Build with the Sailfish SDK from the project root: sfdk build
 # (or mb2 -t <target> build inside the build engine).
+# The Rust build section is derived from Jolla's rpm/symbiosis.spec.
 
 %global rustflags -Clink-arg=-Wl,-z,relro,-z,now
 
