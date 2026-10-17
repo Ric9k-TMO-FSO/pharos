@@ -1,8 +1,10 @@
 # Pharos
 
+Inspired from the original Jolla Inari Blue TOH LED toggle button and system.
+
 Find your phone in the night.
 
-A very dim, steady light while the display is off, to find your Sailfish OS
+A very dim, steady light while the display is off, to find our Sailfish OS
 phone in the dark.
 
 - Front notification LED, dimmed through an MCE pattern (`PatternPharos`).
