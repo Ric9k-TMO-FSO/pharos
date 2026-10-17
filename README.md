@@ -12,6 +12,11 @@ phone in the dark.
 This project was created with heavy LLM use, and some human brain and knowledge
 where possible.
 
+Please note: this has not yet been tested over the long term.
+You use it at your own risk, particularly in the event of data loss or
+damage to the software or hardware.
+
+
 ## Compatibility and testing
 
 - Briefly tested on the Jolla Phone (2026) with Sailfish OS 5.1 and the
