@@ -43,6 +43,8 @@ There is no automatic switch on when the ambient light is low: detecting
 nightfall with the display off would wake the phone from deep sleep, which
 could use more battery than the LEDs at minimum power. Theory, to be
 confirmed.
+Briefly tested on the Jolla Phone (2026). The TOH LED part only works on that
+phone with the Inari Blue TOH; the front LED part is untested elsewhere.
 
 %build
 # Cross-compiling under SB2: tell rust which arch to emit (see symbiosis.spec)

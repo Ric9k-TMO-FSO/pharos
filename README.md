@@ -9,7 +9,19 @@ phone in the dark.
 - With the Inari Blue TOH attached: its middle LED, in constant mode.
 - A top menu switch to turn it on and off.
 
-This project was created with heavy LLM use, and human brain and knowledge where possible.
+This project was created with heavy LLM use, and some human brain and knowledge
+where possible.
+
+## Compatibility and testing
+
+- Briefly tested on the Jolla Phone (2026) with Sailfish OS 5.1 and the
+  Inari Blue TOH.
+- The TOH LED part only works on the Jolla Phone (2026) with the Inari Blue
+  TOH: it needs the TOH connector, Jolla's symbiosis service and the Inari
+  Blue LED controller.
+- The front LED part uses a standard MCE LED pattern, so it may work on other
+  Sailfish OS devices with a notification LED, but it has not been tested on
+  any other device.
 
 ## Build
 
