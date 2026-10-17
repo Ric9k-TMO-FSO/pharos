@@ -1,0 +1,15 @@
+{
+    "translation_catalog": "pharos",
+    "entries": [
+        {
+            "path": "system_settings/look_and_feel/topmenu/pharos/enable_switch",
+            "type": "custom",
+            "translation_id": "pharos-la-name",
+            "icon": "image://theme/icon-m-pharos",
+            "params": {
+                "source": "/usr/share/jolla-settings/pages/pharos/EnableSwitch.qml",
+                "type": "grid"
+            }
+        }
+    ]
+}

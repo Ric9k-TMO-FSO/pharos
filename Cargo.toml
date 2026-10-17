@@ -1,0 +1,21 @@
+[package]
+name = "pharos"
+version = "0.1.0"
+license = "BSD-3-Clause"
+edition = "2021"
+# Sailfish OS 5.x ships Rust 1.75.0
+rust-version = "1.75.0"
+publish = false
+description = "Dim front and TOH lights while the display is off, to find the phone in the dark"
+
+[dependencies]
+# Jolla's TOH daemon library: TOH detection and I2C bus borrowing over D-Bus
+symbiosis = { git = "https://github.com/sailfishos/symbiosis.git", tag = "0.3.1" }
+argh = "0.1.13"
+futures = { version = "0.3.30", default-features = false, features = ["std"] }
+num_enum = "0.7.6"
+tokio = { version = "1.52.3", features = ["full"] }
+zbus = { version = "4.4.0", default-features = false, features = ["tokio"] }
+
+[profile.release]
+strip = "symbols"

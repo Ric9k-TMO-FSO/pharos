@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Pharos icon v11: lighthouse on a symmetric islet, winding path from the door,
+       lamp in the lantern, narrow open continuous beams. Outline only, white on transparent. -->
+  <g fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+    <!-- beams: open truncated cones, detached from the lantern, continuous,
+         both edges ending at the same distance -->
+    <path d="M 23 12.625 L 4 9.25"/>
+    <path d="M 23 14.875 L 4 17.75"/>
+    <path d="M 41 12.625 L 60 9.25"/>
+    <path d="M 41 14.875 L 60 17.75"/>
+    <!-- finial -->
+    <path d="M 32 3 L 32 5.5"/>
+    <!-- rounded cap, as wide as the lantern -->
+    <path d="M 27.5 10 A 4.5 4.5 0 0 1 36.5 10 Z"/>
+    <!-- lantern room -->
+    <path d="M 27.5 10 L 27.5 17 M 36.5 10 L 36.5 17"/>
+    <circle cx="32" cy="13.5" r="1.6"/>
+    <!-- tower -->
+    <path d="M 26.5 17 L 23.93 52 L 40.08 52 L 37.5 17 Z"/>
+    <!-- diagonal bands -->
+    <path d="M 25.40 32 L 38.09 25"/>
+    <path d="M 24.59 43 L 38.90 36"/>
+    <!-- off-centre door -->
+    <path d="M 33.5 52 L 33.5 47.5 A 2 2 0 0 1 37.5 47.5 L 37.5 52"/>
+    <!-- winding path from the door, slightly in perspective -->
+    <path d="M 33.50 52.00 C 34.00 52.38 37.15 53.47 36.50 54.30 C 35.85 55.13 30.15 56.05 29.60 57.00 C 29.05 57.95 32.60 59.50 33.20 60.00"/>
+    <path d="M 37.50 52.00 C 38.17 52.38 41.82 53.47 41.50 54.30 C 41.18 55.13 35.78 56.05 35.60 57.00 C 35.42 57.95 39.60 59.50 40.40 60.00"/>
+    <!-- islet: symmetric, slightly irregular ground, rounded ends -->
+    <path d="M 23.93 52 C 20 52.6 18.5 53.6 16 54.2 S 11.5 55.6 9.5 56.8 C 7 57.6 5.2 58.4 6.2 59.6"/>
+    <path d="M 40.08 52 C 44 52.6 45.5 53.6 48 54.2 S 52.5 55.6 54.5 56.8 C 57 57.6 58.8 58.4 57.8 59.6"/>
+    <path d="M 6.2 59.6 Q 6.6 60 7.5 60 L 56.5 60 Q 57.4 60 57.8 59.6"/>
+  </g>
+</svg>

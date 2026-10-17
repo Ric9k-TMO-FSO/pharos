@@ -1,0 +1,20 @@
+# SPDX-FileCopyrightText: 2026 Jolla Mobile Ltd
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+# Started with the user session when enabled (top menu switch).
+# Works with or without the TOH: the front LED is handled by MCE,
+# the TOH light is set on each display change when the TOH is present.
+
+[Unit]
+Description=Pharos: dim lights while the display is off
+After=post-user-session.target
+
+[Service]
+ExecStart=/usr/libexec/pharos/pharos watch --brightness 3 --current 15 --led 1
+ExecStopPost=-/usr/libexec/pharos/pharos off
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=post-user-session.target

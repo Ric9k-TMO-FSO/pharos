@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Jolla Mobile Ltd
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+--- # Lets pharos borrow the TOH I2C bus.
+access:
+  i2c-dev: ["/usr/libexec/pharos/pharos"]
