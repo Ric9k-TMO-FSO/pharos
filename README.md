@@ -1,8 +1,11 @@
+
+
+
 # Pharos
 
 Inspired from the original Jolla Inari Blue TOH LED toggle button and system.
 
-Find your phone in the night.
+Find your phone in the night. JP2 only.
 
 A very dim, steady light while the display is off, to find our Sailfish OS
 phone in the dark.
@@ -50,6 +53,10 @@ The package is written to `RPMS/`.
     pkcon install-local pharos-*.rpm    # as root (devel-su)
 
 Then add **Pharos** to the top menu in Settings and switch it on.
+
+## Uninstall
+
+    pkcon remove pharos                 # as root (devel-su)
 
 ## Files
 
